@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body>
+    <h1 class="text-center my-3 container">Write your text for analize this</h1>
+
+    <form class="container my-4" action="/analize" method="get">
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" name="text" id="floatingTextarea2" style="height: 150px"></textarea>
+            <label for="floatingTextarea2">write your text here</label>
+          </div>
+
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" name="UPPERCASE">
+            <label class="form-check-label" for="flexSwitchCheckDefault">UPPERCASE</label>
+          </div>
+
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" name="extraspaceremover">
+            <label class="form-check-label" for="flexSwitchCheckDefault">extraspaceremover</label>
+          </div>
+
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" name="removepunctions">
+            <label class="form-check-label" for="flexSwitchCheckDefault">removepunctions</label>
+          </div>
+
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" name="charcount">
+            <label class="form-check-label" for="flexSwitchCheckDefault">charcount</label>
+          </div>
+       
+       <button type="submit" class="btn btn-primary my-2"> Submit</button>
+       
+
+    </form>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
